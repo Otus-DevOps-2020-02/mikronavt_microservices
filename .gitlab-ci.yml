@@ -40,13 +40,13 @@ deploy_dev_job:
     url: http://dev.example.com
 
 staging:
-  - stage: stage
-    when: manual
-    script:
-      - echo 'Deploy'
-    environment:
-      name: stage
-      url: https://beta.example.com
+  stage: stage
+  when: manual
+  script:
+    - echo 'Deploy'
+  environment:
+    name: stage
+    url: https://beta.example.com
 
 production:
   stage: production
